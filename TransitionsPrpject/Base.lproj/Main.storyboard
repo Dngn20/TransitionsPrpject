@@ -46,12 +46,28 @@
                     <view key="view" contentMode="scaleToFill" id="Kc6-dP-cV0">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mole" translatesAutoresizingMaskIntoConstraints="NO" id="agS-M3-lON">
+                                <rect key="frame" x="180" y="260" width="240" height="204"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="G0J-Du-zl3">
+                                <rect key="frame" x="180" y="61" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="bottomMole" destination="agS-M3-lON" id="zBE-tt-OLB"/>
+                        <outlet property="topBike" destination="G0J-Du-zl3" id="gMB-Ef-Ky6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oXU-Qa-yB3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="564" y="160"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="download" width="277" height="182"/>
+        <image name="mole" width="36" height="42"/>
+    </resources>
 </document>

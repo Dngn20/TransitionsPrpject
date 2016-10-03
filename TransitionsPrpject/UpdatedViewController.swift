@@ -10,5 +10,15 @@ import UIKit
 
 class UpdatedViewController : UIViewController
 {
+    @IBOutlet private weak var topBike: UIImageView!
     
+    @IBOutlet private weak var bottomMole: UIImageView!
+    
+    override func viewDidLoad()
+    {
+        //Does the arent class version of the method first.
+        super.viewDidLoad()
+        //The load this classes components.
+        bottomMole.image = UIImage(named: "mole")
+    }
 }
