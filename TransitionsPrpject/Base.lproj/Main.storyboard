@@ -20,12 +20,15 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZf-OH-1vt">
                                 <rect key="frame" x="230" y="465" width="140" height="30"/>
                                 <state key="normal" title="Change Screen "/>
+                                <connections>
+                                    <action selector="changeScreens:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OfH-8r-otg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.38947746849999998" green="1" blue="0.26111306909999998" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
-                        <segue destination="q7M-sl-Ovg" kind="show" identifier="ToUpdatedViewScreen" id="CiA-ZM-JZO"/>
+                        <segue destination="q7M-sl-Ovg" kind="show" identifier="toUpdatedFromMain" id="CiA-ZM-JZO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
